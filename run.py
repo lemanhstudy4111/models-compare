@@ -1,5 +1,7 @@
 from sklearn import datasets
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 digits = datasets.load_digits(return_X_y=True)
@@ -14,4 +16,4 @@ print("Attributes:", digits_dataset_X[digit_to_show])
 print("Class:", digits_dataset_y[digit_to_show])
 
 plt.imshow(np.reshape(digits_dataset_X[digit_to_show], (8, 8)))
-plt.savefig('test.png')
+plt.show()
