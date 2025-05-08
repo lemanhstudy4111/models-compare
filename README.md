@@ -6,6 +6,8 @@ gcc make perl python3-tk
 
 Install with "sudo apt-get install gcc make perl python3-tk"
 
+Additionally, before running, extract "fashion-mnist.tar.gz" to the directory.
+
 --How to run--
 
     // create your virtual python environment
